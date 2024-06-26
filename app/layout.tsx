@@ -7,13 +7,6 @@ const poppins = Poppins({
   weight: ["400", "500", "700"],
   variable: "--font-poppins",
 });
-
-// const firaMono = Fira_Mono({
-//   subsets: ["latin"],
-//   weight: ["400", "500", "700"],
-//   variable: "--font-firaMono",
-// });
-
 export const metadata: Metadata = {
   title: "Event Ways",
   description: "EventWays By Vantech Team",
@@ -26,7 +19,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body
+        className={poppins.className}
+        style={{ backgroundImage: "url('/assets/background.jpg')" }}
+      >
+        {children}
+      </body>
     </html>
   );
 }
