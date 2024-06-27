@@ -6,33 +6,30 @@ import Header from "./components/Header";
 export default function Home() {
   const router = useRouter();
   return (
-    <div className="min-h-screen flex flex-col">
-      <Header />
-      <main className="flex-grow">
-        <section
-          className="h-[500px] bg-cover bg-center relative"
-          style={{ backgroundImage: "url('/assets/background.jpg')" }}
+    <>
+      <div className="flex flex-col h-screen">
+        <Header />
+        <div
+          className="relative flex-1 flex flex-col justify-center items-center bg-cover bg-center"
+          style={{ backgroundImage: `url('/assets/background.jpg')` }}
         >
-          <div className="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center">
-            <h2 className="text-4xl font-bold text-white">
+          <div className="absolute inset-0 bg-black bg-opacity-10 backdrop-blur-sm"></div>
+          <div className="relative text-center p-6 rounded-lg">
+            <h2 className="text-4xl font-bold text-white text-shadow-lg">
               Momen Spesial Anda
             </h2>
-            <p className="text-xl text-white mt-4">
+            <p className="text-xl text-white mt-4 text-shadow-md">
               Buat dan Bagikan Undangan Acara dengan Mudah dan Elegan
             </p>
             <button
               onClick={() => router.push("/add-events")}
-              className="mt-6 bg-black text-white px-6 py-3 rounded hover:bg-gray-800"
+              className="mt-6 bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-900"
             >
               Buat Undangan
             </button>
           </div>
-        </section>
-      </main>
-
-      <footer className="bg-gray-100 p-4 text-center">
-        <p>&copy; 2024 EventWays. All rights reserved.</p>
-      </footer>
-    </div>
+        </div>
+      </div>
+    </>
   );
 }
