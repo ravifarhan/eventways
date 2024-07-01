@@ -7,13 +7,13 @@ export default function Home() {
   const router = useRouter();
   return (
     <>
-      <div className="flex flex-col h-screen">
+      {/* <div className="flex flex-col h-screen"> */}
         <Header />
         <div
-          className="relative flex-1 flex flex-col justify-center items-center bg-cover bg-center"
+          className="h-[500px] flex flex-col justify-center items-center bg-cover bg-center"
           style={{ backgroundImage: `url('/assets/background.jpg')` }}
         >
-          <div className="absolute inset-0 bg-black bg-opacity-10 backdrop-blur-sm"></div>
+          {/* <div className="absolute h-[500px] bg-black bg-opacity-10 backdrop-blur-sm"></div> */}
           <div className="relative text-center p-6 rounded-lg">
             <h2 className="text-4xl font-bold text-white text-shadow-lg">
               Momen Spesial Anda
@@ -29,7 +29,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </>
   );
 }
