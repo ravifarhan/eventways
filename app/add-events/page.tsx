@@ -4,7 +4,7 @@ const AddEvent = () => {
   return (
     <>
       <Header />
-      <div className="bg-white rounded-lg shadow-lg p-4 w-full xl:ml-36 mx-auto max-w-md mt-10">
+      <div className="bg-white rounded-lg p-4 w-full xl:ml-36 mx-auto max-w-md mt-10 shadow-2xl">
         <h2 className="text-xl font-semibold mb-4">Buat Jadwal Acara</h2>
         <div className="mb-4">
           <label htmlFor="title">Judul Acara</label>
